@@ -1,0 +1,4 @@
+tls:
+  certificates:
+    - certFile: /etc/ssl/midna.local.crt
+      keyFile: /etc/ssl/midna.local.key
