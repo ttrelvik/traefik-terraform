@@ -39,7 +39,8 @@ resource "docker_container" "traefik" {
     "--providers.docker=true",
     "--entrypoints.websecure.address=:443",
     "--providers.file.filename=/etc/traefik/dynamic_conf.yml",
-    "--api.dashboard=true"
+    "--api.dashboard=true",
+    "--accesslog=true"
   ]
 
   # Add Docker labels that Traefik uses to configure itself.
